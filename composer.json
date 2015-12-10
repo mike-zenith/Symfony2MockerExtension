@@ -32,7 +32,7 @@
         "symfony/event-dispatcher": "*",
         "symfony/http-kernel": "*",
 
-        "polishsymfonycommunity/symfony-mocker-container": ">=1.1.0"
+        "polishsymfonycommunity/symfony-mocker-container": "dev-prophecy-migration"
     },
     "require-dev": {
         "phpspec/phpspec": "2.0.*@dev",
@@ -51,5 +51,11 @@
     },
     "config": {
         "bin-dir": "bin"
-    }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/cakper/SymfonyMockerContainer.git"
+        }
+    ]
 }
